@@ -1,0 +1,108 @@
+.navbar {
+  height: 65px;
+  width: 100%;
+  background-color:antiquewhite;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 25px;
+
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-logo {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.menu-btn {
+  border: none;
+  background: transparent;
+  font-size: 25px;
+  cursor: pointer;
+  color: #374151;
+}
+
+.menu-btn:hover {
+  color: #2563eb;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-user {
+  font-size: 15px;
+  color: #4b5563;
+}
+
+.logout-btn {
+  border: none;
+  padding: 9px 16px;
+
+  background-color: #ef4444;
+  color: white;
+
+  border-radius: 6px;
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+.action {
+  display: flex;
+  text-align: center;
+  border-bottom: 5px solid #e68309;
+  width: 23%;
+  border-radius: 2rem;
+  background-color: #688383;
+  color: wheat;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 800;
+  margin-right: 55px;
+justify-content: space-between;
+}
+
+.nav-home{
+    display: inline-block;
+  margin-left: 40px;
+  color: wheat;
+  text-decoration: none;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+
+.nav-teacher {
+  display: inline-block;
+  color: wheat;
+  text-decoration: none;
+  transition: transform 0.25s ease, color 0.25s ease;
+  margin-right: 40px;
+}
+
+.nav-home:hover,
+.nav-teacher:hover {
+  transform: translateY(-2px);
+  color: white;
+}

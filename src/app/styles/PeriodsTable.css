@@ -1,0 +1,137 @@
+.periods-table {
+  display: flex;
+
+  width: max-content;
+  min-width: 100%;
+
+  margin-left: 0;
+
+  gap: 0;
+}
+
+
+
+.period-empty {
+  width: 160px;
+  min-width: 160px;
+
+  height: 64px;
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+
+
+.add-schedule-btn {
+  width: 125px;
+  height: 34px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #111827;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.add-schedule-btn:hover {
+  background-color: #1f2937;
+
+  transform: translateY(-1px);
+}
+
+.add-schedule-btn:active {
+  transform: translateY(0);
+}
+
+
+
+
+.period-box {
+  width: 300px;
+  min-width: 300px;
+
+  height: 64px;
+
+  margin: 0 6px;
+
+  border: 1px solid #dcdcdc;
+
+  border-radius: 7px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+
+.period-title {
+  font-size: 12px;
+
+  font-weight: 600;
+
+  color: #111827;
+}
+
+
+
+
+.period-box span {
+  margin-top: 3px;
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  color: #555555;
+}
+
+
+
+.period-empty {
+  position: relative;
+}
+
+.date-picker-btn {
+  width: 125px;
+  height: 34px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.date-picker-btn:hover {
+  background: #f3f4f6;
+}
+
+.hidden-date-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
