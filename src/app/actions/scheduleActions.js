@@ -29,7 +29,7 @@ export async function getSchedules() {
 export async function addSchedule(scheduleData) {
 
     const res = await fetch(
-      "http://localhost:5000/schedule/post",
+      "https://cr-scheduling-server.onrender.com/schedule/post",
       {
         method: "POST",
 
@@ -55,7 +55,7 @@ export async function deleteSchedule(id) {
     console.log("DELETE ID:", id);
 
     const res = await fetch(
-      `http://localhost:5000/schedule/delete/${id}`,
+      `https://cr-scheduling-server.onrender.com/schedule/delete/${id}`,
       {
         method: "DELETE",
         cache: "no-store",
@@ -106,7 +106,7 @@ export async function getAllTeacherSchedules(teachers = []) {
       teachers.map(async (teacher) => {
 
         const res = await fetch(
-          `http://localhost:5000/schedule/teacher/${encodeURIComponent(
+          `https://cr-scheduling-server.onrender.com/schedule/teacher/${encodeURIComponent(
             teacher.name
           )}`,
           {
@@ -163,7 +163,7 @@ export async function getSchedulesByDate(
     console.log("Fetching schedules for date:", date);
 
     const res = await fetch(
-      `http://localhost:5000/schedule/date/${date}`,
+      `https://cr-scheduling-server.onrender.com/schedule/date/${date}`,
       {
         method: "GET",
         cache: "no-store",
