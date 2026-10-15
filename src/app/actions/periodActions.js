@@ -1,7 +1,7 @@
 "use server"
 export async function getPeriods() {
   try {
-    const res = await fetch("http://localhost:5000/period/get", {
+    const res = await fetch("https://cr-scheduling-server.onrender.com/period/get", {
       method: "GET",
       cache: "no-store",
     });

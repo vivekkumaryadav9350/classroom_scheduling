@@ -2,7 +2,7 @@
 
 export async function getClasses() {
   try {
-    const res = await fetch("http://localhost:5000/class/get", {
+    const res = await fetch("https://cr-scheduling-server.onrender.com/class/get", {
       method: "GET",
       cache: "no-store",
     });

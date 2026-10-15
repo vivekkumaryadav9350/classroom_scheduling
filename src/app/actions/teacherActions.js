@@ -2,7 +2,7 @@
 
 export async function getTeachers() {
   try {
-    const res = await fetch("http://localhost:5000/teacher/get", {
+    const res = await fetch("https://cr-scheduling-server.onrender.com/teacher/get", {
       method: "GET",
       cache: "no-store",
     });

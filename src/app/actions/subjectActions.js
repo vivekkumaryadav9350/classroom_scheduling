@@ -2,7 +2,7 @@
 
 export async function getSubjects() {
   try {
-    const res = await fetch("http://localhost:5000/subject/get", {
+    const res = await fetch("https://cr-scheduling-server.onrender.com/subject/get", {
       method: "GET",
       cache: "no-store",
     });
